@@ -153,6 +153,8 @@ public class BlackJackApp extends Application {
 			dealerCards[round + 1].setImage(c.getImage());
 			dealerCards[round + 1].setTranslateX(200 - (round + 1)*100);
 			dealerCards[round + 1].setTranslateY(-100);
+			
+			//I UNCOMMENTED THESE 2
 			//root.getChildren().add(dealerCards[round + 1]);
 			//cardFlip.play();
 		}
