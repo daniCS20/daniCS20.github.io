@@ -80,16 +80,16 @@ public class InteractiveFictionTesting {
 		
 		//Test set/get Lamp when lighting
 		Lamp lamp = new Lamp();
-		lamp.setLit(true);
-		if(!lamp.isLit())
+		lamp.setIsLit(true);
+		if(!lamp.getIsLit())
 		{
 			System.out.println("Lamp.java: the getIsLit() method did not return the expected value after lighting");
 			return false;
 		}
 		
 		//Test set/get Lamp when darkening
-		lamp.setLit(false);
-		if(lamp.isLit())
+		lamp.setIsLit(false);
+		if(lamp.getIsLit())
 		{
 			System.out.println("Lamp.java: the getIsLit() method did not return the expected value after darkening");
 			return false;
@@ -162,4 +162,3 @@ public class InteractiveFictionTesting {
 		return true; //if all passed
 	}
 }
-
